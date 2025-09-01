@@ -20,14 +20,12 @@ def afiseaza_comanda():
         print(f"Pana acum ai comandat:  {comanda}")
     else:
         print("Lista goala!")
-    return redirect(url_for('home'))
+    return render_template("menu.html", comanda=comanda)
 
 @app.route("/goleste")
 def goleste_comanda():
     comanda.clear()
     return redirect(url_for('home'))
-
-
 
 
 
