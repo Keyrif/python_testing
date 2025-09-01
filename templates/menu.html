@@ -5,7 +5,28 @@
     <title>keyrif nope</title>
 </head>
 <body>
-    <h1>Bine ai venit!</h1>
-    <p>Aici e pagina ta de start. Poți să modifici tot ce vrei.</p>
+
+    <h1>python testing, current project: </h1>
+
+    <h2>Meniu:</h2>
+    <ul>
+        <li><a href="{{ url_for('adauga_iteme', item ='Cartofi prajiti') }}">1. Cartofi prajiti</a></li>
+        <li><a href="{{ url_for('afiseaza_comanda') }}">Vezi comanda</a></li>
+
+
+    </ul>
+
+    <h2>Comanda ta:</h2>
+    {% if comanda %}
+    <ul>
+        {% for item in comanda %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    {% else %}
+        <p>Lista este goala!</p>
+    {%  endif %}
+    </ul>
+    <a href="{{ url_for('goleste_comanda') }}">Golește comanda</a>
+
 </body>
 </html>
