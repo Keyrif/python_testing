@@ -2,28 +2,10 @@
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <title>McDonalds Comenzi</title>
+    <title>keyrif nope</title>
 </head>
 <body>
-    <h1>Bun venit la McDonalds!</h1>
-    <p>Ce doriți să comandați?</p>
-    <ul>
-        <li><a href="/adauga/McPuisor">🍔 McPuisor</a></li>
-        <li><a href="/adauga/Cartofi">🍟 Cartofi</a></li>
-        <li><a href="/adauga/Shake%20Vanilie">🥤 Shake Vanilie</a></li>
-    </ul>
-
-    <h2>Comanda ta:</h2>
-    {% if lista %}
-        <ul>
-        {% for produs, cantitate in lista.items() %}
-            <li>{{ cantitate }}x {{ produs }}</li>
-        {% endfor %}
-        </ul>
-    {% else %}
-        <p>Comanda este goală!</p>
-    {% endif %}
-
-    <a href="/anulare">❌ Anulează comanda</a>
+    <h1>Bine ai venit!</h1>
+    <p>Aici e pagina ta de start. Poți să modifici tot ce vrei.</p>
 </body>
 </html>
